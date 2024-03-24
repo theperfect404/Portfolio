@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">Alexandra Brynlee</a>
+      <ul class="navigation_menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- mobile nav icon -->
+      <div class="burger_menu_icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2 active"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <!-- mobile nav -->
+    <ul class="menu_items">
+      <li onclick="aboutPage()"><a href="#">About</a></li>
+      <li onclick="skillPage()"><a href="#">Skills</a></li>
+      <li onclick="projectPage()"><a href="#">Projects</a></li>
+      <li onclick="contactPage()"><a href="#">Contact</a></li>
+    </ul>
+
+    <section id="hero">
+      <div class="container">
+        <div class="title">
+          <mark>Nice to meet you...</mark>
+          <h1>My name is Alexandra!</h1>
+          <p>Frontend/UI Developer</p>
+          <a class="resume" href="#">My Resume</a>
+        </div>
+        <div class="hero_image">
+          <img src="./assets/profile.png" alt="my profile" />
+          <div class="bg-img-animation"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <article>
+          <h2>My Story</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi
+            error enim ad, rerum delectus quae odio fugiat unde praesentium amet
+            nisi assumenda laudantium, illo nostrum, modi labore sint dolores!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequuntur quibusdam iusto, doloribus sunt eveniet, possimus ea
+            dolor sequi saepe corporis, quo quas hic beatae veritatis nobis
+            facere recusandae suscipit nostrum.
+          </p>
+          <blockquote>alexandra@gmail.com</blockquote>
+        </article>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="container">
+        <div>
+          <h2>This is What I've Learnt</h2>
+          <p>
+            <b>Share, How did you learn</b> consectetur adipisicing elit.
+            Sapiente quisquam nemo magnam obcaecati voluptatem amet molestiae,
+            maxime, explicabo soluta itaque delectus quam animi tenetur.
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Sass</li>
+            <li>JS</li>
+            <li>Git</li>
+            <li>Github</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="project">
+      <div class="container">
+        <h2>Somethings That I've Built</h2>
+        <div class="project_lists">
+          <div class="project_details">
+            <img src="./assets/project-01.png" alt="project image" />
+            <div class="project_content">
+              <h3>Project Name</h3>
+              <p><b>About your project</b> sit amet constur elit.</p>
+              <a href="https://github.com/nayhlaingoo" target="_blank"
+                >myproject.github.io</a
+              >
+            </div>
+          </div>
+          <div class="project_details">
+            <img src="./assets/project-02.png" alt="project image" />
+            <div class="project_content">
+              <h3>Project Name</h3>
+              <p><b>About your project</b> sit amet constur elit.</p>
+              <a href="https://github.com/nayhlaingoo" target="_blank"
+                >myproject.github.io</a
+              >
+            </div>
+          </div>
+          <div class="project_details">
+            <img src="./assets/project-03.png" alt="project image" />
+            <div class="project_content">
+              <h3>Project Name</h3>
+              <p><b>About your project</b> sit amet constur elit.</p>
+              <a href="https://github.com/nayhlaingoo" target="_blank"
+                >myproject.github.io</a
+              >
+            </div>
+          </div>
+          <div class="project_details">
+            <img src="./assets/project-04.png" alt="project image" />
+            <div class="project_content">
+              <h3>Project Name</h3>
+              <p><b>About your project</b> sit amet constur elit.</p>
+              <a href="https://github.com/nayhlaingoo" target="_blank"
+                >myproject.github.io</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Follow Me on Social Media</h2>
+      <div class="container">
+        <a
+          href="https://www.facebook.com/profile.php?id=61551756930748"
+          target="_blank"
+          >Facebook</a
+        >
+        <a href="https://www.instagram.com/nayhlaingoo_93/" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://github.com/nayhlaingoo" target="_blank">Github</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer>
+      <div class="foot_content">
+        <span>Copyright © 2023 - All right reserved</span>
+        <span>Built by Nay Hlaing Oo</span>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

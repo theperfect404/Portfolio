@@ -1,0 +1,37 @@
+#skill {
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  ul {
+    @include flex(row, wrap, center, 1rem);
+
+    li {
+      background: linear-gradient(to top right, $primaryClr, $secondaryClr);
+      color: $accentClr;
+      width: 170px;
+      height: 90px;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      @include flex(row, nowrap, center);
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
+
+@include xs {
+  #skill {
+    ul {
+      gap: 0.5rem;
+
+      li {
+        width: 140px;
+        height: 80px;
+      }
+    }
+  }
+}

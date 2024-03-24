@@ -1,0 +1,22 @@
+#contact {
+  a {
+    border: 1px solid $accentClr;
+    width: 200px;
+    height: 90px;
+    @include flex(row, nowrap, center);
+    transition: letter-spacing 0.2s ease-in;
+
+    &:hover {
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@include xs {
+  #contact {
+    a {
+      width: 100%;
+      height: 60px;
+    }
+  }
+}

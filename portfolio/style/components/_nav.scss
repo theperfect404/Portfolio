@@ -1,0 +1,76 @@
+@use "./variables" as *;
+
+.burger_menu_icon,
+.menu_items {
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding: 0.7rem 3rem;
+  position: fixed;
+  top: 0;
+  background-color: #4c4e503a;
+  border-bottom: 1px solid #ffffff18;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  z-index: 50;
+  @include flex(row, nowrap, space-between);
+
+  .logo {
+    font-size: $fs-xl;
+    font-family: $Tangerine;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  ul {
+    @include flex(row, nowrap, center, 3rem);
+  }
+}
+
+@include sm {
+  header {
+    padding: 10px 20px;
+
+    .navigation_menu {
+      display: none;
+    }
+    .burger_menu_icon {
+      width: 30px;
+      height: 27px;
+      cursor: pointer;
+      @include flex(column, nowrap, center);
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        background-color: $accentClr;
+        width: 100%;
+        height: 1px;
+        border-radius: 2px;
+      }
+      .active {
+        margin-block: 0.5rem;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .menu_items {
+    @include flex(column, nowrap, center, 10%);
+    font-size: 1.7rem;
+    background-color: #000;
+    width: 100%;
+    height: 0vh;
+    transition: height 0.3s ease-in-out;
+    z-index: 40;
+    visibility: hidden;
+  }
+  .open {
+    visibility: visible;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,14 @@
+footer {
+  padding: 2rem;
+  margin-top: 2rem;
+
+  .foot_content {
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+}

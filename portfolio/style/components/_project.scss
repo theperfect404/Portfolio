@@ -1,0 +1,70 @@
+#project {
+  .project_lists {
+    @include flex(row, wrap, center, 1.5rem);
+
+    .project_details {
+      width: 250px;
+      height: 350px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      position: relative;
+      overflow: hidden;
+
+      &:hover img {
+        filter: brightness(0.4);
+      }
+
+      &:hover .project_content {
+        transform: translateY(0px);
+        padding-bottom: 20px;
+      }
+
+      img {
+        filter: brightness(0.3);
+        transition: filter 0.1s ease-in-out;
+      }
+
+      .project_content {
+        transform: translateY(27px);
+        position: absolute;
+        bottom: 0;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        background: linear-gradient(to top, #000000ef, #00000000);
+        transition: all 0.2s ease-in-out;
+
+        h3 {
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        a {
+          color: #6a6aff;
+          margin-top: 5px;
+          font-size: 0.8rem;
+          display: inline-block;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include xs {
+  #project {
+    .project_lists {
+      gap: 1rem;
+    }
+
+    .project_details {
+      width: 200px;
+      height: 300px;
+    }
+  }
+}
